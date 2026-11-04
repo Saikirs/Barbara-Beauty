@@ -1,0 +1,40 @@
+:root {
+  /* ---- Neutros: fundo, superfície e texto -------------------------------*/
+  --background: #f3ece1; /* fundo mais distante — atrás de tudo */
+  --surface: #FAC6B6; /* fundo de card/painel — uma camada "acima" do background */
+  --surface-raised: #F2E5E5; /* fundo de modal/dropdown — mais uma camada acima, ainda mais clara */
+  --on-surface: #42261A; /* texto principal sobre qualquer superfície neutra */
+  --on-surface-muted: #6B4D4B; /* texto secundário — mesma família de cor, menor contraste de propósito */
+  --outline: #A37F69; /* bordas e divisores sutis */
+  /* ---- Cores de marca ("primitivas") ------------------------------------*/
+  --primary: #F0764F; /* coral — ação principal (ex.: "Adicionar à Estante") */
+  --primary-pressed: ##FF9E7D; /* mesma cor, mais escura — estado pressionado/hover */
+  --on-primary: var(--on-surface); /* era #FFFFFF — falha AA, ver nota acima */
+  --secondary: #96D496; /* sálvia — ações sociais (ex.: "Seguir") */
+  --secondary-pressed: #7AA17A; /* sálvia — ações sociais (ex.: "Seguir") */
+  --on-secondary: var(--on-surface); /* era #FFFFFF — falha AA, ver nota acima */
+  --accent: ##F2DA5C; /* âmbar — destaque (ex.: badge "Recomendado") */
+  --on-accent: #4D4036;
+  --success: #96D496; /* mesmo valor de --secondary: sucesso comunicado com a mesma cor "positiva" */
+  --on-success: var(--on-surface);
+  --warning: ##F0DD7F; /* mesmo valor de --accent */
+  --on-warning: #4D4036;
+  --danger: #e2777a; /* erro / ação destrutiva */
+  --on-danger: var(--on-surface); /* era #FFFFFF — falha AA, ver nota acima */
+  /* ---- Tokens semânticos -------------------------------------------------*/
+  --text-heading: var(--on-surface);
+  --text-body: var(--on-surface);
+  --text-muted: var(--on-surface-muted);
+  --text-inverse: var(--surface-raised); /* texto claro, para usar sobre um fundo escuro (se existir) */
+  --text-link: var(--primary-pressed);
+  --text-link-hover: var(--primary);
+  --surface-page: var(--background);
+  --surface-card: var(--surface);
+  --surface-sunken: var(--background); /* área "afundada" visualmente (ex.: trilho de um input) */
+  --border-subtle: var(--outline);
+  --border-default: var(--outline);
+  --accent-primary: var(--primary);
+  --accent-primary-hover: var(--primary-pressed);
+  --accent-secondary: var(--secondary);
+  --focus-ring: var(--primary); /* contorno de foco de teclado — acessibilidade, nunca removido em componente algum */
+}

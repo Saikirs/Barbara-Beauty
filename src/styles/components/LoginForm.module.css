@@ -1,0 +1,37 @@
+.card {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+.title {
+    font-family: var(--font-display);
+    font-weight: var(--text-xl);
+    text-align: center;
+    margin: 0;
+    color: var(--text-heading);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+.errorGeneral {
+    color: var(--danger);
+    font-size: var(--text-sm);
+    margin: 0;
+}
+.footer {
+    text-align: center;
+    font-size: var(--text-sm);
+    color: var(--on-surface-muted);
+    margin: 0;
+}
+.footer a {
+    color: var(--text-link);
+}
+.footer a:hover {
+    color: var(--text-link-hover);
+}
+ 

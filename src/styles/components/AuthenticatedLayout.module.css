@@ -1,0 +1,26 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .content {
+        padding-bottom: 0;
+    }
+}

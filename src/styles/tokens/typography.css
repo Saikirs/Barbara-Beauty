@@ -1,0 +1,28 @@
+@import "@fontsource/nunito/400.css"; 
+@import "@fontsource/nunito/600.css"; 
+@import "@fontsource/nunito/700.css"; 
+@import "@fontsource/nunito/400-italic.css"; 
+@import "@fontsource/fredoka/600.css";
+
+
+:root{
+    --font-display: 'Fredoka', ui-rounded, system-ui, sans-serif;
+    --font-body: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+ 
+
+    --text-xs: 0.75rem; /*12px*/
+    --text-sm: 0.875rem; /*14px*/
+    --text-base: 1rem; /*1 rem = 16pixels*/
+    --text-md: 1.125rem; /*18px*/
+    --text-lg: 1.375rem; /*22px*/
+    --text-xl: 1.75rem; /*28px*/
+    --text-2xl: 2.25rem; /*38px*/
+    --text-3xl: 3rem; /*48px*/
+    --leading-tight: 1.2;
+    --leading-normal:1.5;
+    --leading-relaxed: 1.65;
+    --weight-regular: 400;
+    --weight-medium:500;
+    --weight-semibold: 600;
+    --weight-bold:700;
+}

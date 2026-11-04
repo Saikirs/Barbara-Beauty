@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-1);
+}
+.iconWrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background: var(--background);
+    color: var(--on-surface-muted);
+}
+.value {
+    font-family: var(--font-display);
+    font-weight: var(--weight-bold);
+    font-size: var(--text-2xl);
+    line-height: var(--leading-tight);
+    color: var(--on-surface);
+}
+.label {
+    font-size: var(--text-sm);
+    color: var(--on-surface-muted);
+}
+.primary {color: var(--primary)}
+
+.success {color: var(--success);}
+
+.danger {color: var(--danger)}
